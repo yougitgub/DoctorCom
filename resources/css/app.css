@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.swiper {
+    width: 100%;
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    filter: brightness(0.7);
+}
+
+/* Custom Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    width: 50px !important;
+    height: 50px !important;
+    background: rgba(59, 130, 246, 0.9) !important; /* Blue-600 with transparency */
+    border-radius: 50% !important;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: rgba(37, 99, 235, 0.95) !important; /* Blue-700 on hover */
+    transform: scale(1.1);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 20px !important;
+    font-weight: bold;
+    color: white;
+}
+
+/* Positioning */
+.swiper-button-next {
+    right: 30px !important;
+}
+
+.swiper-button-prev {
+    left: 30px !important;
+}
+
+/* Pagination bullets */
+.swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    background: rgba(255, 255, 255, 0.6) !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #3B82F6 !important; /* Blue-600 */
+    width: 30px !important;
+    border-radius: 6px !important;
+}
+
+*{
+    font-family: cursive;
+}
